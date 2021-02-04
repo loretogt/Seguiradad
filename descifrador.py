@@ -99,6 +99,7 @@ def adfgvx(tex, clave):
             if l == "I": mat.append("9")
             if l == "J": mat.append("0")
     matrix= np.array(mat).reshape((6, 6))
+    print(matrix)
     desfif= []
     for i in tex:
         if i != " ":
@@ -108,7 +109,6 @@ def adfgvx(tex, clave):
     for elem in range(0,int(len(desfif)/2)): #los ejementos se cogen de dos en dos
         des.append(matrix[adfgvx.index(desfif[i])][adfgvx.index(desfif[i+1])])
         i+=2
-    print(matrix)
     print ("".join(des))
 
 def transColSen(tex,clave):#transposicion columnar sencilla
