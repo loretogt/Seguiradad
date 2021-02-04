@@ -405,6 +405,7 @@ def ic(): #indice de coincidencia
             if letras[i]==l:
                 apariciones[i]+=1
     sum=0
+    #para el final imprimir más cositas
     for i in apariciones:
         sum+= (i*(i-1))
     print(sum/(len(descif)*(len(descif)-1)))
