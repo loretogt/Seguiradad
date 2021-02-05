@@ -303,12 +303,12 @@ def indiceCoincidencia():
     
     for i in apariciones:
         sum+= (i*(i-1))
-    print (letras)
-    print(apariciones)
+    #print (letras)
+    #print(apariciones)
     print("----Apariencia de las letras----")
     for i in range(0,len(letras)):
-        print(str(letras[i]) + " = " + str(apariciones[i]) )
-    print("----Numero de elementos (N)----")
+        print(str(letras[i]) + " = " + str(apariciones[i]), end='; ')
+    print("\n----Numero de elementos (N)----")
     print(len(descif))
     print("----IC----")
     print(str(sum)+"/"+str(len(descif)*(len(descif)-1))+"=")
@@ -363,8 +363,8 @@ def kullback():
 
     print("----Apariencia de las letras----")
     for i in range(0,len(letras)):
-        print(str(letras[i]) + " = " + str(apariciones[i]) )
-    print("----N y N·(N-1)----")
+        print(str(letras[i]) + " = " + str(apariciones[i]), end='; ')
+    print("\n----N y N·(N-1)----")
     print("N= "+str(len(descif)))
     print("N·(N-1)= "+ str(len(descif)*(len(descif)-1)))
 
@@ -407,8 +407,8 @@ def xTest():
    
     print("----Apariencia de las letras----")
     for i in range(0,len(letras)):
-        print(str(letras[i]) + " : Texto1= " + str(apariciones1[i]) + " Texto2= " + str(apariciones2[i])+ " X-obs= "+ str(apariciones1[i]*apariciones2[i]) )
-    print("----Numero de elementos (N)----")
+        print(str(letras[i]) + " : Texto1= " + str(apariciones1[i]) + " Texto2= " + str(apariciones2[i])+ " X-obs= "+ str(apariciones1[i]*apariciones2[i]), end='; ' )
+    print("\n----Numero de elementos (N)----")
     print("Texto1= "+ str(len(descif1)))
     print("Texto2= "+ str(len(descif2)))
     print("----Resultados----")
