@@ -1,5 +1,6 @@
 import numpy as np
 import os
+
 import math
 
 # function to return key for any value
@@ -46,7 +47,6 @@ def portaBellaso():
             descif.append(i)            
     print("Cual es la clave?")
     clave=input().upper()
-    clave=clave.replace(' ','')
     resultado=[]
     i = 0
     for letra in descif:
