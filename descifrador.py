@@ -1,8 +1,5 @@
 import numpy as np
 import os
-from itertools import permutations  
-from itertools import combinations_with_replacement 
-from itertools import product
 import math
 
 # function to return key for any value
@@ -49,6 +46,7 @@ def portaBellaso():
             descif.append(i)            
     print("Cual es la clave?")
     clave=input().upper()
+    clave=clave.replace(' ','')
     resultado=[]
     i = 0
     for letra in descif:
@@ -407,7 +405,7 @@ def xTest():
    
     print("----Apariencia de las letras----")
     for i in range(0,len(letras)):
-        print(str(letras[i]) + " : Texto1= " + str(apariciones1[i]) + " Texto2= " + str(apariciones2[i])+ " X-obs= "+ str(apariciones1[i]*apariciones2[i]), end='; ' )
+        print(str(letras[i]) + " : Texto1= " + str(apariciones1[i]) + " Texto2= " + str(apariciones2[i])+ " X-obs= "+ str(apariciones1[i]*apariciones2[i]) )
     print("\n----Numero de elementos (N)----")
     print("Texto1= "+ str(len(descif1)))
     print("Texto2= "+ str(len(descif2)))
